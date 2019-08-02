@@ -3,16 +3,16 @@
 <br>
 <br>
 <div class="mx-auto" style="width: 200px;">
-  <h1 class="badge-secondary d-inline-flex p-2">Uncle Nasser</h1>
   <br>
   <div class="border border-warning d-inline-flex p-2 mx-auto" style="width: 200px;">
     <p>"<%= params[:question] %>"<br><em>-You</em></p>
   </div>
   <br>
   <br>
+  <%= image_tag("nasser2.jpg", :alt=> "uncle nasser", :width=> "200", :height=> "40", :class=> "img-thumbnail rounded mx-auto d-block")%>
   <div class="border border-danger d-inline-flex p-2 mx-auto" style="width: 200px;">
     <p>"<%= @response %>"<br><em>-Uncle</em></p>
   </div>
   <br>
-  <a href="/ask">ask another question</a>
+  <a href="/ask">restart</a>
 </div>
