@@ -1,18 +1,20 @@
 <br>
 <br>
 <br>
-<br>
-<div class="mx-auto" style="width: 200px;">
+<div class="mx-auto" style="width: 400px;">
   <br>
-  <div class="border border-warning d-inline-flex p-2 mx-auto" style="width: 200px;">
-    <p>"<%= params[:question] %>"<br><em>-You</em></p>
+  <div class="p-3 mb-2 bg-light text-dark rounded-pill">
+    <p class="text-center">"<%= params[:question] %>"<br><em>-You</em></p>
   </div>
   <br>
   <br>
   <%= image_tag("nasser2.jpg", :alt=> "uncle nasser", :width=> "200", :height=> "40", :class=> "img-thumbnail rounded mx-auto d-block")%>
-  <div class="border border-danger d-inline-flex p-2 mx-auto" style="width: 200px;">
-    <p>"<%= @response %>"<br><em>-Uncle</em></p>
+  <br>
+  <div class="p-3 mb-2 bg-light text-dark rounded-pill">
+    <p class="text-center">"<%= @response %>"<br><em>-Uncle Nasser</em></p>
   </div>
   <br>
-  <a href="/ask">restart</a>
+  <div class="text-center">
+    <a href="/ask">restart</a>
+  </div>
 </div>

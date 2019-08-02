@@ -2,18 +2,28 @@
 <br>
 <br>
 <br>
-<div class="mx-auto" style="width: 200px;">
-  <h1>Uncle Nasser</h1>
-  <%= image_tag("nasser.jpg", :alt=> "uncle nasser", :width=> "200", :height=> "40", :class=> "img-thumbnail rounded mx-auto d-block")%>
-  <p>"Would you like to hear a joke, or ask me a question?"</p>
-
-  <form action="ask_question">
-    <input type="submit" value="I have a question!">
-  </form>
+<div class="mx-auto" style="width: 400px;">
+  <div class="p-3 mb-2 bg-light text-dark rounded-pill">
+    <h1 class="text-center">Uncle Nasser</h1>
+  </div>
   <br>
-  <form action="ask_joke">
-    <input type="submit" value="Tell me a joke!">
-  </form>
+  <div>
+    <%= image_tag("nasser.jpg", :alt=> "uncle nasser", :width=> "200", :height=> "40", :class=> "img-thumbnail rounded mx-auto d-block")%>
+  </div>
+  <br>
+  <div class="p-3 mb-2 bg-light text-dark rounded-pill">
+    <p class="text-center">"Would you like to hear a joke, or ask me a question?"</p>
+  </div>
+  <br>
+  <div class="text-center">
+    <form action="ask_question">
+      <input type="submit" value="I have a question!">
+    </form>
+    <br>
+    <form action="ask_joke">
+      <input type="submit" value="Tell me a joke!">
+    </form>
+  </div>
 </div>
 
 
